@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="373dp"
+    android:layout_height="402dp"
+    android:background="@drawable/dialog_bg"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Image view for the icon -->
+    <ImageView
+        android:id="@+id/dialogIcon"
+        android:layout_width="163dp"
+        android:layout_height="185dp"
+        android:src="@drawable/not_verify"
+        android:layout_gravity="center"
+        android:contentDescription="Success Icon" />
+
+    <!-- Title Text View -->
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ticket not verified"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:gravity="center"/>
+
+    <!-- Message Text View -->
+    <TextView
+        android:id="@+id/dialogMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your ticket event is invalid "
+        android:textSize="16sp"
+        android:textColor="#8A8A8A"
+        android:fontFamily="@font/aeoniktrail_regular"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"/>
+
+    <!-- Action Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnBackToHome"
+        android:layout_width="284dp"
+        android:layout_height="58dp"
+        android:background="@drawable/btn"
+        android:backgroundTint="@color/red"
+        android:textAllCaps="false"
+        android:text="Got it"
+        android:textColor="@color/white"
+        android:fontFamily="@font/aeoniktrail_bold"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

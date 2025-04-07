@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".HomeScreen.PrivacyActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+            <ImageView
+                android:id="@+id/back_icon_btn"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/arrow_left_02"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="74dp"
+                android:fontFamily="@font/aeoniktrail_bold"
+                android:textSize="23sp"
+                android:text="Privacy policy"/>
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="696dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:lineHeight="30sp"
+            android:fontFamily="@font/aeoniktrail_regular"
+            android:text="Lorem ipsum dolor sit amet consectetur. Augue orci dictum aenean sed tempus nec. Imperdiet dignissim quis lorem aliquam nisi consequat vestibulum id mauris. Facilisi sit egestas non bibendum. Ac massa nam elementum nisl turpis. Venenatis sed parturient tempus venenatis. Id at condimentum ac nisi eget neque et. Diam odio duis libero non ac. Suspendisse malesuada vehicula nisl dignissim lacus nunc pellentesque. Eu eu adipiscing diam viverra et posuere leo."/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:lineHeight="30sp"
+            android:fontFamily="@font/aeoniktrail_regular"
+            android:text="Lorem ipsum dolor sit amet consectetur. Augue orci dictum aenean sed tempus nec. Imperdiet dignissim quis lorem aliquam nisi consequat vestibulum id mauris. Facilisi sit egestas non bibendum. Ac massa nam elementum nisl turpis. Venenatis sed parturient tempus venenatis. Id at condimentum ac nisi eget neque et. Diam odio duis libero non ac. Suspendisse malesuada vehicula nisl dignissim lacus nunc pellentesque. Eu eu adipiscing diam viverra et posuere leo."/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:lineHeight="30sp"
+            android:fontFamily="@font/aeoniktrail_regular"
+            android:text="Lorem ipsum dolor sit amet consectetur. Augue orci dictum aenean sed tempus nec. Imperdiet dignissim quis lorem aliquam nisi consequat vestibulum id mauris. Facilisi sit egestas non bibendum. "/>
+    </LinearLayout>
+</LinearLayout>

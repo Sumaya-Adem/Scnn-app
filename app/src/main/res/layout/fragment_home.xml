@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_gravity="center">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileImage"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:background="@drawable/profile_bg"
+                android:src="@drawable/abrham"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/welcomeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome back"
+                android:textSize="14sp"
+                android:textColor="@color/grey"
+                android:fontFamily="@font/aeoniktrail_regular"
+                />
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/wave"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="-15dp"/>
+
+            <!-- Profile Name -->
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="John Abraham"
+                android:fontFamily="@font/aeoniktrail_bold"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/btnlogout"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="165dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/logout_bg"
+           >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logout"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="70dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/scan"
+             />
+        <TextView
+            android:id="@+id/noTicketMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Ticket Scan"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/aeoniktrail_regular"
+            android:textStyle="bold"
+           />
+
+        <!-- Ticket Scan Description -->
+        <TextView
+            android:id="@+id/ticketScanDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="You currently haven’t scanned any event ticket yet"
+            android:textSize="16sp"
+            android:fontFamily="@font/aeoniktrail_regular"
+            android:textColor="#A0A0A0"
+            />
+    </LinearLayout>
+    <!-- Bottom Navigation with FAB -->
+<!--    <androidx.coordinatorlayout.widget.CoordinatorLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="67dp">-->
+
+<!--        <com.google.android.material.bottomappbar.BottomAppBar-->
+<!--            android:id="@+id/bottom_appbar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:backgroundTint="#FFFFFF"-->
+<!--            app:fabCradleMargin="8dp"-->
+<!--            app:fabCradleRoundedCornerRadius="50dp"-->
+<!--            app:fabCradleVerticalOffset="6dp"/>-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="horizontal">-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="90dp"-->
+<!--            android:layout_height="53dp"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:orientation="vertical">-->
+<!--            <ImageView-->
+<!--                android:id="@+id/historyicon"-->
+<!--                android:layout_width="24dp"-->
+<!--                android:layout_height="24dp"-->
+<!--                android:layout_weight="1"-->
+<!--                app:srcCompat="@drawable/history_icon"/>-->
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="History"-->
+<!--                android:textAlignment="center"-->
+<!--                android:fontFamily="@font/aeoniktrail_regular"-->
+<!--                android:textColor="@color/grey"-->
+<!--                android:textSize="12sp"/>-->
+<!--        </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical">-->
+<!--        </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="90dp"-->
+<!--            android:layout_height="53dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:gravity="center"-->
+<!--            android:orientation="vertical">-->
+<!--            <ImageView-->
+<!--                android:id="@+id/profileicon"-->
+<!--                android:layout_width="24dp"-->
+<!--                android:layout_height="24dp"-->
+<!--                android:layout_weight="1"-->
+<!--                app:srcCompat="@drawable/bottom_profile_icon"/>-->
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Profile"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textColor="@color/grey"-->
+<!--                android:textSize="12sp"/>-->
+<!--        </LinearLayout>-->
+<!--        </LinearLayout>-->
+
+<!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--            android:id="@+id/floating_btn"-->
+<!--            android:layout_width="58dp"-->
+<!--            android:layout_height="58dp"-->
+<!--            android:backgroundTint="@color/green"-->
+<!--            android:src="@drawable/fab_scan"-->
+<!--            android:background="@drawable/active_dot"-->
+<!--            app:tint="@color/white"-->
+<!--            app:maxImageSize="26.26sp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:contentDescription="floating action button"-->
+<!--            />-->
+<!--    </androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+
+
+
+</LinearLayout>

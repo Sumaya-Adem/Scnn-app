@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".OnboardingScreens.OnboardingFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/topview"
+        app:layout_constraintBottom_toTopOf="@id/downview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/onboarding_image1" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/onboarding_image2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/top_linear"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/back"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:id="@+id/skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skip"
+            android:layout_marginTop="55dp"
+            android:layout_marginStart="365dp"
+            android:textSize="18sp"
+            android:textColor="@color/green"
+            android:fontFamily="@font/aeoniktrail_regular"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bottom_bg"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/back"
+       >
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Create an unforgettable \n event experience"
+            android:textSize="28sp"
+            android:textFontWeight="700"
+            android:fontFamily="@font/aeoniktrail_bold"
+            android:textAlignment="center"
+
+            />
+        <TextView
+            android:id="@+id/textDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Organizers can use the app to manage \n events, managing attendees"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/grey"
+            android:fontFamily="@font/aeoniktrail_regular"
+            android:layout_marginBottom="30dp"
+
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/nest_btn"
+            android:layout_width="398dp"
+            android:layout_height="60dp"
+            android:background="@drawable/btn"
+            android:text="Next"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:lineHeight="28dp"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/nest_btn"-->
+<!--            android:layout_width="398dp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:background="@drawable/btn"-->
+<!--            android:text="Next"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="20sp"-->
+<!--            android:lineHeight="28dp"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:layout_gravity="bottom"/>-->
+    </LinearLayout>
+    <View
+        android:id="@+id/downview"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/up_to_down"
+        app:layout_constraintBottom_toTopOf="@id/bottom_bg"
+        />
+    <View
+        android:id="@+id/topview"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@drawable/transparency"
+        app:layout_constraintTop_toBottomOf="@id/top_linear"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

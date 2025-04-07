@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    Primary color-->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="green">#0AB247</color>
+
+    <!--    secondary green color-->
+    <color name="light_green">#EBF9EE</color>
+
+    <!--    secondary red color-->
+    <color name="red">#E6352B</color>
+
+    <color name="orange">#FF981F</color>
+
+    <!--Secondary grey color-->
+    <color name="input_grey_outside">#F0F0F0</color>
+    <color name="input_grey_inside">#F8F8F8</color>
+    <color name="input_grey_text">#959595</color>
+    <color name="send_code_btn_grey">#BCBCBC</color>
+    <color name="dark_grey">#666666</color>
+    <color name="greeeeeeeeeey">#777777</color>
+    <color name="grey">#B4B4B4</color>
+
+    <color name="profile_bg">#F1E7DA</color>
+
+</resources>

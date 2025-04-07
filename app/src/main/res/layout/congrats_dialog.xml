@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/congrts_dialog_bg"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Image view for the icon -->
+    <ImageView
+        android:id="@+id/dialogIcon"
+        android:layout_width="163dp"
+        android:layout_height="185dp"
+        android:src="@drawable/ic_succes"
+    android:layout_gravity="center"
+    android:contentDescription="Success Icon" />
+
+    <!-- Title Text View -->
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password Successfully \n Changed"
+        android:textSize="20sp"
+        android:textColor="@color/green"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:gravity="center"/>
+
+    <!-- Message Text View -->
+    <TextView
+        android:id="@+id/dialogMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your password has been\n updated successfully."
+        android:textSize="16sp"
+        android:textColor="#2F2F3F"
+        android:fontFamily="@font/aeoniktrail_regular"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"/>
+
+    <!-- Action Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnBackToSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn"
+        android:textAllCaps="false"
+        android:text="Back to Sign In"
+        android:textColor="@color/white"
+        android:fontFamily="@font/aeoniktrail_bold"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

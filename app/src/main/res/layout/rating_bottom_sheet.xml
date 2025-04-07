@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@drawable/dialog_bg"
+    android:gravity="center">
+
+    <!-- Image view for the icon -->
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:background="@drawable/all_radious_green">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/faras_logo_rate"/>
+    </LinearLayout>
+
+    <!-- Title Text View -->
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enjoying Feres Planner?"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:gravity="center"/>
+
+    <!-- Message Text View -->
+    <TextView
+        android:id="@+id/dialogMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap a star to rate the App"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="#8A8A8A"
+        android:fontFamily="@font/aeoniktrail_regular"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"/>
+    <View
+    android:layout_width="690dp"
+    android:layout_height="2dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:background="@color/input_grey_outside"/>
+    <androidx.appcompat.widget.AppCompatRatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1.0"
+        android:isIndicator="false"
+        style="?android:attr/ratingBarStyleIndicator"
+        android:progressTint="@color/orange"/>
+
+
+    <View
+        android:layout_width="690dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/input_grey_outside"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnNotNow"
+        android:layout_width="380dp"
+        android:layout_height="58dp"
+        android:background="@drawable/btn"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/light_green"
+        android:textSize="20dp"
+        android:text="Not Now"
+        android:textColor="@color/green"
+        android:fontFamily="@font/aeoniktrail_regular"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

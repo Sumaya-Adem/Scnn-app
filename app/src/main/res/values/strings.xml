@@ -1,0 +1,24 @@
+<resources>
+    <!--    splash amd onboarding-->
+    <string name="app_name">EventScanner</string>
+    <string name="planner">PLANNER</string>
+    <string name="Create_unforgettable">Create an unforgettable event experience </string>
+    <string name="organizers_use">Organizers can use the app to manage \n events, managing attendees</string>
+    <string name="ensure_even">We ensures your events is a \n complete success</string>
+    <string name="we_send_push">We send push notifications to attendees to \n keep them updated on upcoming events </string>
+    <string name="let_us_take_care">Let us take care of all your \n event details </string>
+    <string name="We_enable">We enable organizers to sell event tickets \n direct through our app</string>
+
+
+    <!--    welcome-->
+    <string name="welcome">Welcome Back!</string>
+    <string name="get_started">To get started, sign in to your account </string>
+    <string name="email">Enter Email address </string>
+    <string name="password">Password</string>
+    <string name="Remember_me">Remember me</string>
+    <string name="Forget">Forget password</string>
+    <string name="Dont_have">Don\'t have an account?</string>
+    <string name="sign_up">Sign up</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

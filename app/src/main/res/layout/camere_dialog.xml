@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="326dp"
+    android:layout_height="250dp"
+    android:background="@drawable/congrts_dialog_bg"
+    android:padding="16dp"
+    android:gravity="center">
+
+
+
+    <!-- Title Text View -->
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Allow camera access"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+
+        android:gravity="center"/>
+
+    <!-- Message Text View -->
+    <TextView
+        android:id="@+id/dialogMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This requare to continue "
+        android:textSize="16sp"
+        android:textColor="#2F2F3F"
+        android:fontFamily="@font/aeoniktrail_regular"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"/>
+
+    <!-- Action Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/allow"
+        android:layout_width="278dp"
+        android:layout_height="52dp"
+        android:background="@drawable/btn"
+        android:textAllCaps="false"
+        android:text="Allow"
+        android:textColor="@color/white"
+        android:fontFamily="@font/aeoniktrail_bold"
+        android:layout_marginTop="16dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/back"
+        android:layout_width="278dp"
+        android:layout_height="52dp"
+        android:background="@drawable/light_grn_btn_bg"
+        android:textAllCaps="false"
+        android:text="Back"
+        android:textColor="@color/green"
+        android:fontFamily="@font/aeoniktrail_bold"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

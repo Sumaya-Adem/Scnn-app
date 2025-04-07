@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_bg"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CheckIn"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/aeoniktrail_bold"
+        android:textStyle="bold"
+        android:paddingBottom="10dp"/>
+    <ImageView
+        android:id="@+id/closeDialog"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/inactive_dot"
+        android:layout_gravity="end"
+        android:layout_marginTop="-30dp"
+        android:src="@drawable/baseline_close_24"/>
+
+    <View
+        android:layout_width="690dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/input_grey_outside"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/small_scan"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/btnscanqrcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Scan ticket QR code"
+                android:textSize="16sp"
+                android:padding="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/keyboard"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/btnbooking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Type booking ID"
+                android:textSize="16sp"
+                android:padding="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
